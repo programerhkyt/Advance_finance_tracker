@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reports - Finance Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><img class="logo_img" src="logo.avif" alt="LOGO_IMAGE"></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="reports.html" class="active">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="transaction_text">Reports</h1>
+    <section>
+      <p>View detailed reports about your finances.</p>
+      <canvas id="categoryReportChart" width="600" height="300"></canvas>
+      <canvas id="monthlyReportChart" width="600" height="300"></canvas>
+    </section>
+  </main>
+
+<script src="reports.js"></script>
+</body>
+</html>

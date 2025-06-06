@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Settings - Finance Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><img class="logo_img" src="logo.avif" alt="LOGO_IMAGE"></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html" class="active">Settings</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="transaction_text">Settings</h1>
+    <section>
+      <p>Manage your profile and application preferences.</p>
+
+      <form id="settingsForm">
+        <label>
+          Email:<br />
+          <input type="email" id="settingsEmail" readonly />
+        </label><br />
+        <label>
+          Change Password:<br />
+          <input type="password" id="settingsPassword" placeholder="New password" />
+        </label><br />
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+
+<script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Finance Tracker </title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="form-switch">
+      <button id="showLogin" class="active">Login</button>
+      <button id="showSignup">Signup</button>
+    </div>
+
+    <form id="loginForm" class="auth-form">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <label><input type="checkbox" id="rememberMe" /> Remember Me</label>
+      <button type="submit">Login</button>
+      <p><a href="#" id="forgotPassword">Forgot password?</a></p>
+      <p id="loginError" class="error-msg"></p>
+    </form>
+
+    <form id="signupForm" class="auth-form hidden">
+      <h2>Signup</h2>
+      <input type="email" id="signupEmail" placeholder="Email" required />
+      <input type="password" id="signupPassword" placeholder="Password" required />
+      <meter max="4" id="passwordStrength"></meter>
+      <p id="passwordStrengthText"></p>
+      <button type="submit">Signup</button>
+      <p id="signupError" class="error-msg"></p>
+    </form>
+  </div>
+
+<script src="auth.js"></script>
+</body>
+</html>

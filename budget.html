@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Budget - Finance Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><img class="logo_img" src="logo.avif" alt="LOGO_IMAGE"></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html" class="active">Budget</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="transaction_text">Monthly Budget</h1>
+    <section>
+      <p>Create and manage your budget categories.</p>
+      <!-- Example: Add Budget Category -->
+      <form id="budgetForm">
+        <label>
+          Category:<br />
+          <input type="text" id="budgetCategory" required />
+        </label><br />
+        <label>
+          Amount:<br />
+          <input type="number" id="budgetAmount" required />
+        </label><br />
+        <button type="submit">Add Budget</button>
+      </form>
+
+      <div id="budgetList">
+        <!-- Budget categories will be shown here -->
+      </div>
+    </section>
+  </main>
+
+<script src="budget.js"></script>
+</body>
+</html>

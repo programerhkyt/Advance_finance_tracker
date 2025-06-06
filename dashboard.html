@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard - Finance Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <ul><li><img class="logo_img" id="logo_img" src="logo.avif" alt="LOGO_IMAGE"></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome, <span id="userEmail"></span></h1>
+
+    <section class="overview">
+      <h2>Current Balance</h2>
+      <p id="balanceAmount">$0.00</p>
+
+      <div class="quick-actions">
+        <button id="addIncomeBtn">+ Add Income</button>
+        <button id="addExpenseBtn">- Add Expense</button>
+      </div>
+    </section>
+
+    <section class="charts">
+      <canvas id="expensePieChart" width="400" height="300"></canvas>
+      <canvas id="monthlyBarChart" width="600" height="300"></canvas>
+    </section>
+
+    <section class="recent-transactions">
+      <h2>Recent Transactions</h2>
+      <ul id="recentTransactionsList"></ul>
+    </section>
+  </main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

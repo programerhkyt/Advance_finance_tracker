@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Goals - Finance Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><img class="logo_img" src="logo.avif" alt="LOGO_IMAGE"></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="goals.html" class="active">Goals</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 id="transaction_text">Your Financial Goals</h1>
+    <section>
+      <p>Set and track your financial goals here.</p>
+      <!-- Example: Add Goal Form -->
+      <form id="goalForm">
+        <label>
+          Goal Name:<br />
+          <input type="text" id="goalName" required />
+        </label><br />
+        <label>
+          Target Amount:<br />
+          <input type="number" id="goalAmount" required />
+        </label><br />
+        <label>
+          Target Date:<br />
+          <input type="date" id="goalDate" required />
+        </label><br />
+        <button type="submit">Add Goal</button>
+      </form>
+
+      <div id="goalsList">
+        <!-- Goals will be listed here -->
+      </div>
+    </section>
+  </main>
+
+<script src="goals.js"></script>
+</body>
+</html>

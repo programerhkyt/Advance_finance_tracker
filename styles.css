@@ -1,0 +1,162 @@
+/* Basic resets and common styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+nav {
+  background: #2c3e50;
+  padding: 0.5em 1em;
+}
+nav ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  
+  display: flex;
+  gap: 0.8em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav ul li a.active {
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 3px;
+}
+main {
+  padding: 1em 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Buttons */
+button {
+  background: #1abc9c;
+  border: none;
+  padding: 0.5em 1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background: #16a085;
+}
+
+/* Forms */
+input, select, textarea {
+  padding: 0.4em;
+  margin: 0.3em 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+table th {
+  background: #ecf0f1;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 10;
+}
+.modal-content {
+  background: white;
+  padding: 1em 2em;
+  border-radius: 6px;
+  width: 400px;
+  position: relative;
+}
+.modal.hidden {
+  display: none;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Error messages */
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Auth page container */
+.auth-container {
+  max-width: 350px;
+  margin: 5em auto;
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.auth-form input, .auth-form button {
+  margin: 0.5em 0;
+  width: 100%;
+}
+.auth-form.hidden {
+  display: none;
+}
+
+.logo_img{
+  width: 30px; border-radius: 50px;
+  
+}
+#transaction_text{
+  font-size: 4rem;
+  color: #2c3e50;
+ cursor: pointer;
+ text-align: center;
+}
+
+#transaction_text:hover{
+color: tomato;
+}
+.form-switch button {
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  background: #ccc;
+  margin: 0 0.5em;
+  border-radius: 4px;
+}
+.form-switch button.active {
+  background: #1abc9c;
+  color: white;
+}
+meter {
+  width: 100%;
+  height: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+  }
+}
